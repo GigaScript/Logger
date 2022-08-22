@@ -19,5 +19,4 @@ public enum Logger {
     private String dataTimeStamp() {
         return LocalDateTime.now().format(timeStampFormat);
     }
-
 }

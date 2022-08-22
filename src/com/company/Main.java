@@ -17,7 +17,6 @@ public class Main {
             logger.log("Программа завершена");
             scanner.close();
         }
-
     }
 
     private static void filtratedList(ArrayList<Integer> list) {
