@@ -11,10 +11,13 @@ public class Main {
         try {
             ArrayList<Integer> list = createRandomList();
             filtratedList(list);
-            logger.log("Программа завершена");
         } catch (NumberFormatException e) {
             logger.log("Ошибка. Программа ожидала ввод числа без пробелов, введен текст");
+        } finally {
+            logger.log("Программа завершена");
+            scanner.close();
         }
+
     }
 
     private static void filtratedList(ArrayList<Integer> list) {
